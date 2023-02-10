@@ -23,7 +23,7 @@ struct Service {
 
             let repositories = try? decoder.decode([Repository].self, from: data)
 
-            completion(data)
+            completion(repositories)
         }
     }
 }
